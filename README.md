@@ -1,4 +1,4 @@
-# Infrastructure Bootstrap
+# Infrastructure Bootstrapping
 
 
 ## Components
