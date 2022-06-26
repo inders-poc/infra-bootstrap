@@ -9,7 +9,7 @@ The folder structure of this repo is split as follows:
 ├── infra-setup                    <===  📖 helm values files containing applications we wish to deploy
 ├── Chart.yaml                         <===  📖 we deploy infra using a helm chart
 └── values.yaml                        <===  📖 infra application's helm chart values
-```
+
 
 There are two main components to this repository:
 
@@ -40,7 +40,7 @@ helm delete infra --namespace argocd
 
 ```
 
-### Debugging 
+### Debugging
 
 Run the following command to debug one of the UJ values files to see which values are being passed:
 
