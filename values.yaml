@@ -1,0 +1,15 @@
+# Tell ArgoCD where to find the ubiquitous-journey project
+source: https://github.com/inderspoc/istio-bootstrap.git
+team: labs
+release: ci-cd
+
+applications:
+  - name: istio-setup
+    enabled: true
+    source_path: "."
+    destination: argocd
+    helm_values:
+      - infra-setup/values-istio-dev.yaml
+
+
+

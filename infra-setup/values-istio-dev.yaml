@@ -1,0 +1,27 @@
+
+# gloabl vars
+ci_cd_namespace: &ci_cd "labs-ci-cd"
+pm_namespace: &pm "labs-pm"
+ops_namespace: &ops "labs-cluster-ops"
+dev_namespace: &dev "labs-dev"
+test_namespace: &test "labs-test"
+staging_namespace: &stage "labs-staging"
+
+# App of applications list
+applications:
+
+  - name: istio-base
+    enabled: true
+    source: https://github.com/paas2/istio.git
+    source_path: helm-charts/base
+    destination: istio-system
+  - name: istio-operator
+    enabled: true
+    source: https://github.com/paas2/istio.git
+    source_path: helm-charts/istio-operator
+    destination: istio-system
+  - name: istio-bwb-cluster-profile
+    enabled: true
+    source: https://github.com/paas2/istio.git
+    source_path: helm-charts/clusters/bwb/operator
+    destination: istio-system
