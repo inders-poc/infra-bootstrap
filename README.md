@@ -6,7 +6,7 @@
 The folder structure of this repo is split as follows:
 
 ├── templates                         <===  📖 helm templates to create ArgoCD Applications and Projects
-├── infra-setup                    <===  📖 helm values files containing applications we wish to deploy
+├── infra-setup                       <===  📖 helm values files containing applications we wish to deploy
 ├── Chart.yaml                         <===  📖 we deploy infra using a helm chart
 └── values.yaml                        <===  📖 infra application's helm chart values
 
