@@ -1,4 +1,4 @@
-# Tell ArgoCD where to find the ubiquitous-journey project
+
 source: https://github.com/inders-poc/infra-bootstrap.git
 team: labs
 release: ci-cd
